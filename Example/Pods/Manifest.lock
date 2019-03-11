@@ -1,0 +1,30 @@
+PODS:
+  - BHDataStorage (0.1.0):
+    - BHDataStorage/AppGroup (= 0.1.0)
+    - BHDataStorage/Archive (= 0.1.0)
+    - BHDataStorage/Keychain (= 0.1.0)
+  - BHDataStorage/AppGroup (0.1.0)
+  - BHDataStorage/Archive (0.1.0):
+    - PINCache
+  - BHDataStorage/Keychain (0.1.0)
+  - PINCache (2.3)
+
+DEPENDENCIES:
+  - BHDataStorage (from `../`)
+  - PINCache
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PINCache
+
+EXTERNAL SOURCES:
+  BHDataStorage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BHDataStorage: a0843dc933892cb5ff54739aa233d16c52b26be3
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
+
+PODFILE CHECKSUM: d4381f92c7620e6f96b4014ba32d441f3a47341a
+
+COCOAPODS: 1.5.3

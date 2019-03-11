@@ -1,0 +1,51 @@
+{
+  "name": "BHDataStorage",
+  "version": "0.1.0",
+  "summary": "A short description of BHDataStorage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/XB-Paul/BHDataStorage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "XB-Paul": "xuebao.zhan@wwwarehouse.com"
+  },
+  "source": {
+    "git": "https://github.com/XB-Paul/BHDataStorage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "public_header_files": "BHDataStorage/Classes/BHDataStorage.h",
+  "source_files": "BHDataStorage/Classes/BHDataStorage.h",
+  "subspecs": [
+    {
+      "name": "AppGroup",
+      "source_files": "BHDataStorage/Classes/BHAppGroup.{h,m}",
+      "public_header_files": "BHDataStorage/Classes/BHAppGroup.h",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "Keychain",
+      "source_files": "BHDataStorage/Classes/BHKeychain*.{h,m}",
+      "public_header_files": "BHDataStorage/Classes/BHKeychain*.h",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "Archive",
+      "source_files": "BHDataStorage/Classes/BHArchive*.{h,m}",
+      "public_header_files": "BHDataStorage/Classes/BHArchive*.h",
+      "dependencies": {
+        "PINCache": [
+
+        ]
+      },
+      "frameworks": [
+        "Foundation",
+        "Security"
+      ]
+    }
+  ]
+}

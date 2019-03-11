@@ -1,0 +1,13 @@
+
+platform :ios, '8.0'
+
+target 'BHDataStorage_Example' do
+    pod 'BHDataStorage', :path => '../'#, :subspecs => ['AppGroup','Archive','Keychain']
+
+  pod 'PINCache'
+  target 'BHDataStorage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

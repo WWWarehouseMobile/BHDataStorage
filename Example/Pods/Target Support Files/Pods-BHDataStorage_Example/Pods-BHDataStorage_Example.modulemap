@@ -1,0 +1,6 @@
+framework module Pods_BHDataStorage_Example {
+  umbrella header "Pods-BHDataStorage_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

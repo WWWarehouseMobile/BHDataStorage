@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0ADAA654D3F97115544E528438F073D1 /* PINCacheObjectSubscripting.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AEA2468AD8FF7978A92638C989A1B5E /* PINCacheObjectSubscripting.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		203C0B191A8789AFF10A0D3EAC6BCF2F /* BHArchiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2B346FB7431126C6A530FBABC9B550 /* BHArchiveObject.m */; };
+		27D5BD100C754C847FEA3634021C993E /* Pods-BHDataStorage_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE78B5CD5FFFEF9751D641DA3E4E4 /* Pods-BHDataStorage_Tests-dummy.m */; };
+		2A294315996E38367D32E3BA22059479 /* PINCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 659922E5F6FA8B7B28E1EDD65469743C /* PINCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		355FF5423A03561189B06FC440A60C0E /* PINDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B7D25E80DF3552AFC4BD3155036BE60C /* PINDiskCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		363DC24A05FE36D958F4469AC8EEBADA /* PINCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF5AFE0D67B763B2C5D66787CA1DB00 /* PINCache-dummy.m */; };
+		453E66ED225736DA6C710C12B668B27F /* BHKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = D2DF82B58651E55B74980ED1258D180A /* BHKeychain.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		48B7B296B4436B7D67460D846E3FA2A4 /* Nullability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5375DC7BAE331AAEE26788516235F11F /* Nullability.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		695799181E31E493007DF12C2690B020 /* BHKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5D675C0F3A06D145FE84BE2ABBDF5 /* BHKeychainQuery.m */; };
+		6C1F7F21BC54421469D92608FA2C60CE /* PINCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 51E355183EEFEEA41D9A8D44994BC4CB /* PINCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C264634D468B266FECDBC7B8F432507 /* BHDataStorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4F403E08046A30F2E0BFDBBA7FAD5 /* BHDataStorage-dummy.m */; };
+		75FBFC93FA000AC87A624F73F0DBD867 /* BHKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A40D2A93DE2D98BDEE9BB193F70AAD /* BHKeychain.m */; };
+		7E47910E8A472C9B0EB38E4B9480B539 /* BHAppGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = A15DFFABF06C93D20516CB196266A627 /* BHAppGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8DECE7829BACF4A1B7986C4133144362 /* BHDataStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC4A097180EB1841F40BB523EE29DFA /* BHDataStorage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		927A64F95BD0B604D952AE65ED39C73F /* Pods-BHDataStorage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6418CAC678A7D22B03DE212823A0D2 /* Pods-BHDataStorage_Example-dummy.m */; };
+		98F7E6D677EAF5B5578ABCE5274EDD34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29232C0A90275E386A312F9C83843838 /* Foundation.framework */; };
+		9964EE14319A862806C448483625B384 /* PINDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E076AA7ADBF8F15F4BF44A4203885E /* PINDiskCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A235E5D2ED9C3B850CC989DD15F25B18 /* PINMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1322705177A5DE9A917B1260F996C8 /* PINMemoryCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AA35872720C4368BEF00991144E111B4 /* PINMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 969798776A9101CB02AB9334B33C81D6 /* PINMemoryCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B1F5E6412D15C880D92B2F17B81371D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29232C0A90275E386A312F9C83843838 /* Foundation.framework */; };
+		B8AB7E27EA0CFEA3FA8F66038F6B3553 /* BHAppGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FA584C2183FD499A0F543B877C5650ED /* BHAppGroup.m */; };
+		BA528E10E2A4142A854CD528D4B20A18 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938F58AE8CD37924B2DE7052EBB6295B /* Security.framework */; };
+		D6DF10643C23AEF0C1D3A68E2987BF1C /* BHKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = E4EE18A342C1F8A658ACE51ABF8F1755 /* BHKeychainQuery.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E5074D8B6120F1E3EE50E31233BE97AD /* BHArchiveObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B739A27451FF69B69A80FA36EFE9FEC6 /* BHArchiveObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4A44824904B032C298B8308E45EAAF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7B184790469D8FBF3019FEB73F8DC8C;
+			remoteInfo = BHDataStorage;
+		};
+		D3DCC85DFFBFF05DB2987C293C74A05E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92AF63CB15428B16472389480FDA09BA;
+			remoteInfo = PINCache;
+		};
+		E41682FB711A827FE7627CED9588B627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92AF63CB15428B16472389480FDA09BA;
+			remoteInfo = PINCache;
+		};
+		F37DE8869EBAA2CE1EB2E26723829FAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D8E11A6BE23262ECCF271C1AEEEFB26;
+			remoteInfo = "Pods-BHDataStorage_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AB0B0103220F31851D5D9081C68C6D8 /* libPINCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPINCache.a; path = libPINCache.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F44BB864A0BD52581476655022311B7 /* Pods-BHDataStorage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BHDataStorage_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1808DF9BDE35E399AC12468B9FFE32F0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		194242F13376075EEAB137762AA9C64F /* libPods-BHDataStorage_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BHDataStorage_Example.a"; path = "libPods-BHDataStorage_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29232C0A90275E386A312F9C83843838 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2FC4A097180EB1841F40BB523EE29DFA /* BHDataStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BHDataStorage.h; path = BHDataStorage/Classes/BHDataStorage.h; sourceTree = "<group>"; };
+		32D91D42F5BDFFFD1DB165A0C8F0FF73 /* Pods-BHDataStorage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BHDataStorage_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3FC5D675C0F3A06D145FE84BE2ABBDF5 /* BHKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BHKeychainQuery.m; path = BHDataStorage/Classes/BHKeychainQuery.m; sourceTree = "<group>"; };
+		435E6012E048B22C029C0CB80000AB70 /* Pods-BHDataStorage_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BHDataStorage_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		498966E4C6DE671834B5A4377CF9E031 /* PINCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PINCache.xcconfig; sourceTree = "<group>"; };
+		4D6418CAC678A7D22B03DE212823A0D2 /* Pods-BHDataStorage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BHDataStorage_Example-dummy.m"; sourceTree = "<group>"; };
+		51E355183EEFEEA41D9A8D44994BC4CB /* PINCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINCache.h; path = PINCache/PINCache.h; sourceTree = "<group>"; };
+		5375DC7BAE331AAEE26788516235F11F /* Nullability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nullability.h; path = PINCache/Nullability.h; sourceTree = "<group>"; };
+		5D1322705177A5DE9A917B1260F996C8 /* PINMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINMemoryCache.m; path = PINCache/PINMemoryCache.m; sourceTree = "<group>"; };
+		5D276A083222B05CA7D1804963010FF2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		649147F201EA020AD90A997C6E7EDFAC /* BHDataStorage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BHDataStorage.xcconfig; sourceTree = "<group>"; };
+		659922E5F6FA8B7B28E1EDD65469743C /* PINCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINCache.m; path = PINCache/PINCache.m; sourceTree = "<group>"; };
+		6754AFD8CC0305030FD385A04D2712AA /* Pods-BHDataStorage_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BHDataStorage_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		676E215D79F0B94A25CF208EC7BE320E /* libBHDataStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBHDataStorage.a; path = libBHDataStorage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D5ECD99C5D0FF349307C13D353E0D6E /* Pods-BHDataStorage_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BHDataStorage_Example-resources.sh"; sourceTree = "<group>"; };
+		89E076AA7ADBF8F15F4BF44A4203885E /* PINDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINDiskCache.m; path = PINCache/PINDiskCache.m; sourceTree = "<group>"; };
+		8AEA2468AD8FF7978A92638C989A1B5E /* PINCacheObjectSubscripting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINCacheObjectSubscripting.h; path = PINCache/PINCacheObjectSubscripting.h; sourceTree = "<group>"; };
+		938F58AE8CD37924B2DE7052EBB6295B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		969798776A9101CB02AB9334B33C81D6 /* PINMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINMemoryCache.h; path = PINCache/PINMemoryCache.h; sourceTree = "<group>"; };
+		9AE54814B349A53A854AEAAE29D9AA5D /* PINCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINCache-prefix.pch"; sourceTree = "<group>"; };
+		9CA4F403E08046A30F2E0BFDBBA7FAD5 /* BHDataStorage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BHDataStorage-dummy.m"; sourceTree = "<group>"; };
+		A15DFFABF06C93D20516CB196266A627 /* BHAppGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BHAppGroup.h; path = BHDataStorage/Classes/BHAppGroup.h; sourceTree = "<group>"; };
+		A3F193D4D2DE219DBC15381861DF4BDB /* Pods-BHDataStorage_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BHDataStorage_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A4A40D2A93DE2D98BDEE9BB193F70AAD /* BHKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BHKeychain.m; path = BHDataStorage/Classes/BHKeychain.m; sourceTree = "<group>"; };
+		A5F989C55F5D070EA2DE924EE892144B /* Pods-BHDataStorage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BHDataStorage_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AA98FF63CA1332979394C866B336825E /* BHDataStorage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BHDataStorage-prefix.pch"; sourceTree = "<group>"; };
+		B370D24F1C9237A1CCB76B524EF5F194 /* Pods-BHDataStorage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BHDataStorage_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B46E4FC61E847ADBC83D2AB533D9EB62 /* Pods-BHDataStorage_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BHDataStorage_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B49F36C9F62B3E24B943AB232F722B76 /* libPods-BHDataStorage_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BHDataStorage_Tests.a"; path = "libPods-BHDataStorage_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BAE78B5CD5FFFEF9751D641DA3E4E4 /* Pods-BHDataStorage_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BHDataStorage_Tests-dummy.m"; sourceTree = "<group>"; };
+		B739A27451FF69B69A80FA36EFE9FEC6 /* BHArchiveObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BHArchiveObject.h; path = BHDataStorage/Classes/BHArchiveObject.h; sourceTree = "<group>"; };
+		B7D25E80DF3552AFC4BD3155036BE60C /* PINDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINDiskCache.h; path = PINCache/PINDiskCache.h; sourceTree = "<group>"; };
+		BCE090D256AACB5DEAB194278646F376 /* BHDataStorage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = BHDataStorage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CB3436370EC09E634C687D1CE1E5FAC2 /* Pods-BHDataStorage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BHDataStorage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		CDD4B89046E747F19108FAE29B9F7F0E /* Pods-BHDataStorage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BHDataStorage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2DF82B58651E55B74980ED1258D180A /* BHKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BHKeychain.h; path = BHDataStorage/Classes/BHKeychain.h; sourceTree = "<group>"; };
+		DA2B346FB7431126C6A530FBABC9B550 /* BHArchiveObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BHArchiveObject.m; path = BHDataStorage/Classes/BHArchiveObject.m; sourceTree = "<group>"; };
+		E4EE18A342C1F8A658ACE51ABF8F1755 /* BHKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BHKeychainQuery.h; path = BHDataStorage/Classes/BHKeychainQuery.h; sourceTree = "<group>"; };
+		EDF5AFE0D67B763B2C5D66787CA1DB00 /* PINCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PINCache-dummy.m"; sourceTree = "<group>"; };
+		FA584C2183FD499A0F543B877C5650ED /* BHAppGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BHAppGroup.m; path = BHDataStorage/Classes/BHAppGroup.m; sourceTree = "<group>"; };
+		FAB3F376C40FE3E54A579340B01A59FD /* Pods-BHDataStorage_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BHDataStorage_Tests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14D5122E8F7413A3B36403498DCF45EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F7E6D677EAF5B5578ABCE5274EDD34 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4D53E9A7DCC7131DB8D4CFD7743226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F5E6412D15C880D92B2F17B81371D7 /* Foundation.framework in Frameworks */,
+				BA528E10E2A4142A854CD528D4B20A18 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98C91E7E7235C54C1454E50C27C3E7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA4DB576377FD2E3C67475FAE198DAC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C752FB167F5112C49B2BA40F2930113 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				957B6E4D59AE780E12B97637E174770D /* Pods-BHDataStorage_Example */,
+				9457BC8ED0BDB28EA725D19D3EF54E08 /* Pods-BHDataStorage_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3B4C441A8A84F6D00D2FAA9C9E1CFA76 /* AppGroup */ = {
+			isa = PBXGroup;
+			children = (
+				A15DFFABF06C93D20516CB196266A627 /* BHAppGroup.h */,
+				FA584C2183FD499A0F543B877C5650ED /* BHAppGroup.m */,
+			);
+			name = AppGroup;
+			sourceTree = "<group>";
+		};
+		3B74F6E29DDA63438528FE58BD6FEF55 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				29232C0A90275E386A312F9C83843838 /* Foundation.framework */,
+				938F58AE8CD37924B2DE7052EBB6295B /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3C15C528EB61A2D64488515D9850C1B8 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF82B58651E55B74980ED1258D180A /* BHKeychain.h */,
+				A4A40D2A93DE2D98BDEE9BB193F70AAD /* BHKeychain.m */,
+				E4EE18A342C1F8A658ACE51ABF8F1755 /* BHKeychainQuery.h */,
+				3FC5D675C0F3A06D145FE84BE2ABBDF5 /* BHKeychainQuery.m */,
+			);
+			name = Keychain;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B74F6E29DDA63438528FE58BD6FEF55 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49A3AD615458D07342A2DA71C7DF2CBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				676E215D79F0B94A25CF208EC7BE320E /* libBHDataStorage.a */,
+				0AB0B0103220F31851D5D9081C68C6D8 /* libPINCache.a */,
+				194242F13376075EEAB137762AA9C64F /* libPods-BHDataStorage_Example.a */,
+				B49F36C9F62B3E24B943AB232F722B76 /* libPods-BHDataStorage_Tests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62CF7E9EF8BA338BAEC34F3E80F140C9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF5EF25651E8A9F92CA6A47405D30E8A /* BHDataStorage */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				62CF7E9EF8BA338BAEC34F3E80F140C9 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				CFE6AEAA58EC394748C997B058E25D98 /* Pods */,
+				49A3AD615458D07342A2DA71C7DF2CBC /* Products */,
+				2C752FB167F5112C49B2BA40F2930113 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9457BC8ED0BDB28EA725D19D3EF54E08 /* Pods-BHDataStorage_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6754AFD8CC0305030FD385A04D2712AA /* Pods-BHDataStorage_Tests-acknowledgements.markdown */,
+				B46E4FC61E847ADBC83D2AB533D9EB62 /* Pods-BHDataStorage_Tests-acknowledgements.plist */,
+				B4BAE78B5CD5FFFEF9751D641DA3E4E4 /* Pods-BHDataStorage_Tests-dummy.m */,
+				435E6012E048B22C029C0CB80000AB70 /* Pods-BHDataStorage_Tests-frameworks.sh */,
+				FAB3F376C40FE3E54A579340B01A59FD /* Pods-BHDataStorage_Tests-resources.sh */,
+				CDD4B89046E747F19108FAE29B9F7F0E /* Pods-BHDataStorage_Tests.debug.xcconfig */,
+				A5F989C55F5D070EA2DE924EE892144B /* Pods-BHDataStorage_Tests.release.xcconfig */,
+			);
+			name = "Pods-BHDataStorage_Tests";
+			path = "Target Support Files/Pods-BHDataStorage_Tests";
+			sourceTree = "<group>";
+		};
+		957B6E4D59AE780E12B97637E174770D /* Pods-BHDataStorage_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A3F193D4D2DE219DBC15381861DF4BDB /* Pods-BHDataStorage_Example-acknowledgements.markdown */,
+				CB3436370EC09E634C687D1CE1E5FAC2 /* Pods-BHDataStorage_Example-acknowledgements.plist */,
+				4D6418CAC678A7D22B03DE212823A0D2 /* Pods-BHDataStorage_Example-dummy.m */,
+				B370D24F1C9237A1CCB76B524EF5F194 /* Pods-BHDataStorage_Example-frameworks.sh */,
+				7D5ECD99C5D0FF349307C13D353E0D6E /* Pods-BHDataStorage_Example-resources.sh */,
+				32D91D42F5BDFFFD1DB165A0C8F0FF73 /* Pods-BHDataStorage_Example.debug.xcconfig */,
+				0F44BB864A0BD52581476655022311B7 /* Pods-BHDataStorage_Example.release.xcconfig */,
+			);
+			name = "Pods-BHDataStorage_Example";
+			path = "Target Support Files/Pods-BHDataStorage_Example";
+			sourceTree = "<group>";
+		};
+		A195EE0A35B09187EF478DF33E6DD5EE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BCE090D256AACB5DEAB194278646F376 /* BHDataStorage.podspec */,
+				1808DF9BDE35E399AC12468B9FFE32F0 /* LICENSE */,
+				5D276A083222B05CA7D1804963010FF2 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A7BE12427D081D3C7827EF24FFA5D95B /* PINCache */ = {
+			isa = PBXGroup;
+			children = (
+				5375DC7BAE331AAEE26788516235F11F /* Nullability.h */,
+				51E355183EEFEEA41D9A8D44994BC4CB /* PINCache.h */,
+				659922E5F6FA8B7B28E1EDD65469743C /* PINCache.m */,
+				8AEA2468AD8FF7978A92638C989A1B5E /* PINCacheObjectSubscripting.h */,
+				B7D25E80DF3552AFC4BD3155036BE60C /* PINDiskCache.h */,
+				89E076AA7ADBF8F15F4BF44A4203885E /* PINDiskCache.m */,
+				969798776A9101CB02AB9334B33C81D6 /* PINMemoryCache.h */,
+				5D1322705177A5DE9A917B1260F996C8 /* PINMemoryCache.m */,
+				CFDD5FDC253C33D66B7D41E6714BFAF4 /* Support Files */,
+			);
+			name = PINCache;
+			path = PINCache;
+			sourceTree = "<group>";
+		};
+		A95FB79E8D51AC4229E6FA26212A3E1A /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				B739A27451FF69B69A80FA36EFE9FEC6 /* BHArchiveObject.h */,
+				DA2B346FB7431126C6A530FBABC9B550 /* BHArchiveObject.m */,
+			);
+			name = Archive;
+			sourceTree = "<group>";
+		};
+		CFDD5FDC253C33D66B7D41E6714BFAF4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				498966E4C6DE671834B5A4377CF9E031 /* PINCache.xcconfig */,
+				EDF5AFE0D67B763B2C5D66787CA1DB00 /* PINCache-dummy.m */,
+				9AE54814B349A53A854AEAAE29D9AA5D /* PINCache-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PINCache";
+			sourceTree = "<group>";
+		};
+		CFE6AEAA58EC394748C997B058E25D98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7BE12427D081D3C7827EF24FFA5D95B /* PINCache */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DF5EF25651E8A9F92CA6A47405D30E8A /* BHDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				2FC4A097180EB1841F40BB523EE29DFA /* BHDataStorage.h */,
+				3B4C441A8A84F6D00D2FAA9C9E1CFA76 /* AppGroup */,
+				A95FB79E8D51AC4229E6FA26212A3E1A /* Archive */,
+				3C15C528EB61A2D64488515D9850C1B8 /* Keychain */,
+				A195EE0A35B09187EF478DF33E6DD5EE /* Pod */,
+				E01B39C02C39567EE00C1CA6947FD2A5 /* Support Files */,
+			);
+			name = BHDataStorage;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E01B39C02C39567EE00C1CA6947FD2A5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				649147F201EA020AD90A997C6E7EDFAC /* BHDataStorage.xcconfig */,
+				9CA4F403E08046A30F2E0BFDBBA7FAD5 /* BHDataStorage-dummy.m */,
+				AA98FF63CA1332979394C866B336825E /* BHDataStorage-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BHDataStorage";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		068BB4DF5735E607CFD7B8153A540545 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96B7A568103128EA8298A97F647E96C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B7B296B4436B7D67460D846E3FA2A4 /* Nullability.h in Headers */,
+				6C1F7F21BC54421469D92608FA2C60CE /* PINCache.h in Headers */,
+				0ADAA654D3F97115544E528438F073D1 /* PINCacheObjectSubscripting.h in Headers */,
+				355FF5423A03561189B06FC440A60C0E /* PINDiskCache.h in Headers */,
+				AA35872720C4368BEF00991144E111B4 /* PINMemoryCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC88C84E2BA2EAFCCB9EBB38FF918292 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5EE54774E96A5C13AD6DF132DB9BCC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E47910E8A472C9B0EB38E4B9480B539 /* BHAppGroup.h in Headers */,
+				E5074D8B6120F1E3EE50E31233BE97AD /* BHArchiveObject.h in Headers */,
+				8DECE7829BACF4A1B7986C4133144362 /* BHDataStorage.h in Headers */,
+				453E66ED225736DA6C710C12B668B27F /* BHKeychain.h in Headers */,
+				D6DF10643C23AEF0C1D3A68E2987BF1C /* BHKeychainQuery.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1B986847BF68E7F09DB78AF736800FB0 /* Pods-BHDataStorage_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265A02EB0FA71C3F312FDC940256D5A2 /* Build configuration list for PBXNativeTarget "Pods-BHDataStorage_Tests" */;
+			buildPhases = (
+				CC88C84E2BA2EAFCCB9EBB38FF918292 /* Headers */,
+				47116F7C46E06F395035DFE070B17159 /* Sources */,
+				EA4DB576377FD2E3C67475FAE198DAC0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EF4A6E5593C51BEECDF8C3D13012893 /* PBXTargetDependency */,
+			);
+			name = "Pods-BHDataStorage_Tests";
+			productName = "Pods-BHDataStorage_Tests";
+			productReference = B49F36C9F62B3E24B943AB232F722B76 /* libPods-BHDataStorage_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3D8E11A6BE23262ECCF271C1AEEEFB26 /* Pods-BHDataStorage_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 380FA10CA6BF8AF22ACC46B80FFC6156 /* Build configuration list for PBXNativeTarget "Pods-BHDataStorage_Example" */;
+			buildPhases = (
+				068BB4DF5735E607CFD7B8153A540545 /* Headers */,
+				1413A0B8FB144DFE7D8BC73BC0F86E1E /* Sources */,
+				E98C91E7E7235C54C1454E50C27C3E7A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DE23DFC0BF0A582C5517E9647D03CE2 /* PBXTargetDependency */,
+				9F84FC35128CB9A2E0A777782FC6C6A6 /* PBXTargetDependency */,
+			);
+			name = "Pods-BHDataStorage_Example";
+			productName = "Pods-BHDataStorage_Example";
+			productReference = 194242F13376075EEAB137762AA9C64F /* libPods-BHDataStorage_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		92AF63CB15428B16472389480FDA09BA /* PINCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E0C6D6A7308EDFD716BA7941D1343B /* Build configuration list for PBXNativeTarget "PINCache" */;
+			buildPhases = (
+				A96B7A568103128EA8298A97F647E96C /* Headers */,
+				9DA9EB9EC2B018D15E412F3497DF598A /* Sources */,
+				14D5122E8F7413A3B36403498DCF45EC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PINCache;
+			productName = PINCache;
+			productReference = 0AB0B0103220F31851D5D9081C68C6D8 /* libPINCache.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C7B184790469D8FBF3019FEB73F8DC8C /* BHDataStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB4834C4C9F293C39653E7F7F7BEFEF /* Build configuration list for PBXNativeTarget "BHDataStorage" */;
+			buildPhases = (
+				E5EE54774E96A5C13AD6DF132DB9BCC1 /* Headers */,
+				56E0FCDE5273100C50B0BC16E3D209BB /* Sources */,
+				AC4D53E9A7DCC7131DB8D4CFD7743226 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F33DC9FFEEBC0EC237AE52B25C75DC2C /* PBXTargetDependency */,
+			);
+			name = BHDataStorage;
+			productName = BHDataStorage;
+			productReference = 676E215D79F0B94A25CF208EC7BE320E /* libBHDataStorage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 49A3AD615458D07342A2DA71C7DF2CBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7B184790469D8FBF3019FEB73F8DC8C /* BHDataStorage */,
+				92AF63CB15428B16472389480FDA09BA /* PINCache */,
+				3D8E11A6BE23262ECCF271C1AEEEFB26 /* Pods-BHDataStorage_Example */,
+				1B986847BF68E7F09DB78AF736800FB0 /* Pods-BHDataStorage_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1413A0B8FB144DFE7D8BC73BC0F86E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927A64F95BD0B604D952AE65ED39C73F /* Pods-BHDataStorage_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47116F7C46E06F395035DFE070B17159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D5BD100C754C847FEA3634021C993E /* Pods-BHDataStorage_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56E0FCDE5273100C50B0BC16E3D209BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8AB7E27EA0CFEA3FA8F66038F6B3553 /* BHAppGroup.m in Sources */,
+				203C0B191A8789AFF10A0D3EAC6BCF2F /* BHArchiveObject.m in Sources */,
+				6C264634D468B266FECDBC7B8F432507 /* BHDataStorage-dummy.m in Sources */,
+				75FBFC93FA000AC87A624F73F0DBD867 /* BHKeychain.m in Sources */,
+				695799181E31E493007DF12C2690B020 /* BHKeychainQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA9EB9EC2B018D15E412F3497DF598A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363DC24A05FE36D958F4469AC8EEBADA /* PINCache-dummy.m in Sources */,
+				2A294315996E38367D32E3BA22059479 /* PINCache.m in Sources */,
+				9964EE14319A862806C448483625B384 /* PINDiskCache.m in Sources */,
+				A235E5D2ED9C3B850CC989DD15F25B18 /* PINMemoryCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DE23DFC0BF0A582C5517E9647D03CE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BHDataStorage;
+			target = C7B184790469D8FBF3019FEB73F8DC8C /* BHDataStorage */;
+			targetProxy = C4A44824904B032C298B8308E45EAAF9 /* PBXContainerItemProxy */;
+		};
+		7EF4A6E5593C51BEECDF8C3D13012893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BHDataStorage_Example";
+			target = 3D8E11A6BE23262ECCF271C1AEEEFB26 /* Pods-BHDataStorage_Example */;
+			targetProxy = F37DE8869EBAA2CE1EB2E26723829FAA /* PBXContainerItemProxy */;
+		};
+		9F84FC35128CB9A2E0A777782FC6C6A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PINCache;
+			target = 92AF63CB15428B16472389480FDA09BA /* PINCache */;
+			targetProxy = E41682FB711A827FE7627CED9588B627 /* PBXContainerItemProxy */;
+		};
+		F33DC9FFEEBC0EC237AE52B25C75DC2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PINCache;
+			target = 92AF63CB15428B16472389480FDA09BA /* PINCache */;
+			targetProxy = D3DCC85DFFBFF05DB2987C293C74A05E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		31F322E717D70BFB5F561B391851CD27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 498966E4C6DE671834B5A4377CF9E031 /* PINCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PINCache/PINCache-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PINCache;
+				PRODUCT_NAME = PINCache;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		546354F00C61A0C10DDF051957031C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649147F201EA020AD90A997C6E7EDFAC /* BHDataStorage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/BHDataStorage/BHDataStorage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = BHDataStorage;
+				PRODUCT_NAME = BHDataStorage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6424956EA913AFA2A09722A94FCD343A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32D91D42F5BDFFFD1DB165A0C8F0FF73 /* Pods-BHDataStorage_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A6FC8E6600DE31CF9504A9A6543A17D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 498966E4C6DE671834B5A4377CF9E031 /* PINCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PINCache/PINCache-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PINCache;
+				PRODUCT_NAME = PINCache;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85B95B1234E227C814CCC2C7902D0916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A73625DEBD810B78234FA1958C191C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A934652855D0001E820E146E842CAE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F989C55F5D070EA2DE924EE892144B /* Pods-BHDataStorage_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1FBB92434ABF4D9DEBD4106F995651F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F44BB864A0BD52581476655022311B7 /* Pods-BHDataStorage_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E307194A9D8025783D841E42FC3F3302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649147F201EA020AD90A997C6E7EDFAC /* BHDataStorage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/BHDataStorage/BHDataStorage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = BHDataStorage;
+				PRODUCT_NAME = BHDataStorage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F376F361155E507966060E8A737E4FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD4B89046E747F19108FAE29B9F7F0E /* Pods-BHDataStorage_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AB4834C4C9F293C39653E7F7F7BEFEF /* Build configuration list for PBXNativeTarget "BHDataStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546354F00C61A0C10DDF051957031C85 /* Debug */,
+				E307194A9D8025783D841E42FC3F3302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265A02EB0FA71C3F312FDC940256D5A2 /* Build configuration list for PBXNativeTarget "Pods-BHDataStorage_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F376F361155E507966060E8A737E4FB3 /* Debug */,
+				A934652855D0001E820E146E842CAE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73625DEBD810B78234FA1958C191C8C /* Debug */,
+				85B95B1234E227C814CCC2C7902D0916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		380FA10CA6BF8AF22ACC46B80FFC6156 /* Build configuration list for PBXNativeTarget "Pods-BHDataStorage_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6424956EA913AFA2A09722A94FCD343A /* Debug */,
+				E1FBB92434ABF4D9DEBD4106F995651F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0E0C6D6A7308EDFD716BA7941D1343B /* Build configuration list for PBXNativeTarget "PINCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A6FC8E6600DE31CF9504A9A6543A17D /* Debug */,
+				31F322E717D70BFB5F561B391851CD27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
