@@ -34,6 +34,7 @@ typedef NS_ENUM(NSInteger, BHRootPathType) {
  *
  *  @param object 归档对象
  *  @param key    归档的文件名，将会进行md5加密
+ *  @param pathType 根路径类型
  */
 + (void)archiveObject:(id<NSCoding>)object forKey:(NSString *)key pathType:(BHRootPathType)pathType;
 
@@ -41,6 +42,7 @@ typedef NS_ENUM(NSInteger, BHRootPathType) {
  *  @brief 解档
  *
  *  @param key 所解档的文件名，将会进行md5加密后读取
+ *  @param pathType 根路径类型
  *
  *  @return 解档后的对象
  */
@@ -50,6 +52,7 @@ typedef NS_ENUM(NSInteger, BHRootPathType) {
  *  @brief 删除已经归档的对象文件
  *
  *  @param key 所要删除的文件名，将会进行md5加密后删除
+ *  @param pathType 根路径类型
  */
 + (void)removeArchiveObjectForKey:(NSString *)key pathType:(BHRootPathType)pathType;
 
