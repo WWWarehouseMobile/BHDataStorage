@@ -12,5 +12,6 @@
 #import "BHArchiveObject.h"
 #import "BHKeychain.h"
 #import "BHKeychainQuery.h"
+#import "BHDatabase.h"
 
 #endif /* BHDataStorage_h */

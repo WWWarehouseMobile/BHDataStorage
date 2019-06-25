@@ -2,11 +2,17 @@ PODS:
   - BHDataStorage (0.1.0):
     - BHDataStorage/AppGroup (= 0.1.0)
     - BHDataStorage/Archive (= 0.1.0)
+    - BHDataStorage/Database (= 0.1.0)
     - BHDataStorage/Keychain (= 0.1.0)
   - BHDataStorage/AppGroup (0.1.0)
   - BHDataStorage/Archive (0.1.0):
     - PINCache
+  - BHDataStorage/Database (0.1.0):
+    - FMDB
   - BHDataStorage/Keychain (0.1.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - PINCache (2.3)
 
 DEPENDENCIES:
@@ -15,6 +21,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - FMDB
     - PINCache
 
 EXTERNAL SOURCES:
@@ -22,9 +29,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BHDataStorage: a0843dc933892cb5ff54739aa233d16c52b26be3
+  BHDataStorage: 593408352c0db24e5959d2492c643962fa93d8ad
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
 
 PODFILE CHECKSUM: d4381f92c7620e6f96b4014ba32d441f3a47341a
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.0

@@ -51,6 +51,13 @@ TODO: Add long description of the pod here.
       ss.dependency 'PINCache'
       ss.frameworks = 'Foundation', 'Security'
   end
+  
+  s.subspec 'Database' do |ss|
+      ss.source_files = 'BHDataStorage/Classes/BHDatabase*.{h,m}'
+      ss.public_header_files = 'BHDataStorage/Classes/BHDatabase.h'
+      ss.dependency 'FMDB'
+      ss.frameworks = 'Foundation'
+  end
   # s.resource_bundles = {
   #   'BHDataStorage' => ['BHDataStorage/Assets/*.png']
   # }

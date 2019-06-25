@@ -12,7 +12,7 @@
     "XB-Paul": "xuebao.zhan@wwwarehouse.com"
   },
   "source": {
-    "git": "https://github.com/XB-Paul/BHDataStorage.git",
+    "git": "git@github.com:WWWarehouseMobile/BHDataStorage.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -46,6 +46,17 @@
         "Foundation",
         "Security"
       ]
+    },
+    {
+      "name": "Database",
+      "source_files": "BHDataStorage/Classes/BHDatabase*.{h,m}",
+      "public_header_files": "BHDataStorage/Classes/BHDatabase.h",
+      "dependencies": {
+        "FMDB": [
+
+        ]
+      },
+      "frameworks": "Foundation"
     }
   ]
 }

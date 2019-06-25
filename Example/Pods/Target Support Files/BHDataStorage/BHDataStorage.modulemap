@@ -1,6 +1,0 @@
-framework module BHDataStorage {
-  umbrella header "BHDataStorage-umbrella.h"
-
-  export *
-  module * { export * }
-}
