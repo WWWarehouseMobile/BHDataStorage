@@ -22,7 +22,7 @@
     static dispatch_once_t onceToken;
     static BHDatabase *database = nil;
     dispatch_once(&onceToken, ^{
-        database = [BHDatabase new];
+        database = [self new];
     });
     return database;
 }

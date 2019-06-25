@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BHDatabase : NSObject
 
++ (instancetype)sharedInstance;
+
 @property (nonatomic, strong, readonly) FMDatabase *fmdb;
 
 + (BOOL)setupWithName:(NSString *)name;
